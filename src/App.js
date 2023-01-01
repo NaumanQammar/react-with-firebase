@@ -6,7 +6,9 @@ import sidebar_menu from './constants/sidebar-menu';
 
 import './App.css';
 import Orders from './pages/Orders';
-
+import Files from './pages/Files';
+import Users from './pages/Users';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App () {
   return(
     <Router>
@@ -17,6 +19,8 @@ function App () {
               <Routes>
                   <Route path="*" element={<div></div>} />
                   <Route exact path="/" element={<div></div>} />
+                  <Route exact path="/users" element={< Users />} />
+                  <Route exact path="/files" element={< Files />} />
                   <Route exact path="/orders" element={< Orders/>} />
                   <Route exact path="/locations" element={<div></div>} />
                   <Route exact path="/profile" element={<div></div>} />

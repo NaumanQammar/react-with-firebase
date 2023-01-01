@@ -8,3 +8,23 @@
     flex-direction: column;
     background-color: #F0F2F5;
 }
+#subBtn{
+    background: #000;
+    border-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 15px;
+}
+.container-fluid{
+    padding: 20px 40px;
+}
+th, td {
+    text-align: center;
+}
+th {
+    font-size: 14px;
+    font-weight: bold;
+}
+.hidden{
+    display: none !important;
+}

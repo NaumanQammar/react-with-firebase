@@ -12,21 +12,15 @@ const sidebar_menu = [
     },
     {
         id: 2,
-        icon: ProductIcon,
-        path: '/orders',
-        title: 'Orders',
+        icon: UserIcon,
+        path: '/users',
+        title: 'Users',
     },
     {
         id: 3,
-        icon: ShippingIcon,
-        path: '/products',
-        title: 'Products',
-    },
-    {
-        id: 4,
-        icon: UserIcon,
-        path: '/profile',
-        title: 'My account',
+        icon: ProductIcon,
+        path: '/files',
+        title: 'Files',
     }
 ]
 
