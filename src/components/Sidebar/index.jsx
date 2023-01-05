@@ -4,14 +4,17 @@ import { useLocation } from 'react-router-dom';
 import SideBarItem from './sidebar-item';
 
 import './styles.css';
-import logo from '../../assets/images/white-logo.png';
+import logo from '../../assets/images/logo-2.png';
 import LogoutIcon from '../../assets/icons/logout.svg';
 
 function SideBar ({ menu }) {
     const location = useLocation();
-
     const [active, setActive] = useState(1);
-
+    function logout (e){
+        localStorage.clear()
+        window.location.reload(false);
+        console.log('logout');
+    }
     useEffect(() => {
         menu.forEach(element => {
             if (location.pathname === element.path) {
@@ -44,7 +47,7 @@ function SideBar ({ menu }) {
                         ))}
                     </div>
 
-                    <div className='sidebar-footer'>
+                    <div className='sidebar-footer' onClick={logout}>
                         <span className='sidebar-item-label'>Logout</span>
                         <img 
                             src={LogoutIcon}
